@@ -158,64 +158,6 @@ section {
 /*-----------------------------------------------------------------------------------*/
 
 
-/*===============================*/
-/*            Navbar             */
-/*===============================*/
-header {
-  padding: 14px;
-  position: absolute;
-  left: 0;
-  z-index: 99;
-  height: 193px;
-  width: 100%;
-  border-bottom: 4px solid var( --bold-color );
-}
-
-header .brand-name {
-  margin-left: 30px;
-}
-
-header nav {
-  position: relative;
-  bottom: -67px;
-  margin-right: 30px;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 70px;
-  padding-bottom: 15px;
-}
-
-header nav ul li.active {
-  color: var( --main-color );
-  border-bottom: 4px solid var( --main-color );
-}
-
-header nav ul li.active a {
-  color: var( --main-color );
-}
-
-header nav ul li a .fas {
-  position: relative;
-  top: -2px;
-}
-
-header nav ul li a {
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 500;
-  color: var( --bold-color );
-  font-size: 25px;
-  line-height: 32px;
-  transition: all 0.3s ease;
-}
-
-header nav ul li:hover a {
-  color: var( --main-color );
-}
-/*===============================*/
-/*            Navbar             */
-/*===============================*/
 
 
 /*-----------------------------------------------------------------------------------*/
