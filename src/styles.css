@@ -60,8 +60,7 @@
 body {
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Yantramanav', sans-serif;
-  color: var( --back-color );
+  color: var( --light-color );
 }
 
 a {
@@ -73,11 +72,13 @@ ul {
 }
 
 h1 {
+  font-family: 'Yantramanav', sans-serif;
   font-weight: 700;
   color: var( --bold-color );
 }
 
 h2 {
+  font-family: 'Yantramanav', sans-serif;
   font-weight: 500;
   color: var( --bold-color );
 }
@@ -86,6 +87,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Yantramanav', sans-serif;
   font-weight: 400;
   color: var( --bold-color );
 }
