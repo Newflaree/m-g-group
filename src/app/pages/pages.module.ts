@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Modules
 import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
 
 // Pages
 import { PagesComponent } from './pages.component';
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ComponentsModule
   ],
   exports: [
     PagesComponent,
