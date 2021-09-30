@@ -1,0 +1,17 @@
+.wspp-icon {
+  position: fixed;
+  z-index: 100;
+  bottom: 27px;
+  right: 27px;
+}
+
+.wspp-icon i {
+  font-size: 75px;
+  color: var( --main-color );
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wspp-icon i:hover {
+  text-shadow: 1px 1px 4px var( --bold-color );
+}

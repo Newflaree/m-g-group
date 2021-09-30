@@ -17,10 +17,33 @@
       <!-- Navbar -->
       <nav>
         <ul>
-          <li class='nav-item active'><a href='#' class='active'>Inicio</a></li>
-          <li class='nav-item'><a href='#'>Quienes Somos</a></li>
-          <li class='nav-item'><a href='#'>Productos <i class="fas fa-sort-down"></i></a></li>
-          <li class='nav-item'><a href='#'>Contacto</a></li>
+          <li class='nav-item' 
+              (click)='toHome()'
+              routerLinkActive="active">
+            <a routerLink="/home">
+              Inicio
+            </a>
+          </li>
+          <li class='nav-item' 
+              (click)='toAbout()'
+              routerLinkActive="active">
+            <a routerLink="/about">
+              Quienes Somos
+            </a>
+          </li>
+          <li class='nav-item' 
+              routerLinkActive="active">
+            <a routerLink="/products">
+              Productos <i class="fas fa-sort-down"></i>
+            </a>
+          </li>
+          <li class='nav-item' 
+              (click)='toContact()'
+              routerLinkActive="active">
+            <a routerLink="/contact">
+              Contacto
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Navbar -->

@@ -12,4 +12,16 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toHome() {
+    document.getElementById( 'home' )
+  }
+
+  toAbout() {
+    document.getElementById( 'about' )?.scrollIntoView({ behavior:'smooth' });
+  }
+
+  toContact() {
+    document.getElementById( 'contact' )?.scrollIntoView({ behavior:'smooth' });
+  }
+
 }
