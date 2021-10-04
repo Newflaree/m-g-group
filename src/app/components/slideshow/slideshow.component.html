@@ -1,8 +1,32 @@
 <section class='slideshow'>
   <div class='container'>
-    <div class='row'>
-      Slideshow
-    </div>
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide"
+               *ngFor='let slide of slideImgs'
+               [ngStyle]="{
+                'background-size': 'cover',
+                'background-position': 'center',
+                'background-image': 'url( https://w7.pngwing.com/pngs/788/957/png-transparent-graphics-font-line-google-adwords-banner-orange-google-adwords-banner-line.png )'
+               }">
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <!-- If we need navigation buttons -->
+        <div (click)='onPrev()' class="swiper-button-prev"></div>
+        <div (click)='onNext()' class="swiper-button-next"></div>
+
+      </div>
   </div>
 </section>
 

@@ -1,6 +1,8 @@
+.container {
+  z-index: 77;
+}
 .wspp-icon {
   position: fixed;
-  z-index: 100;
   bottom: 27px;
   right: 27px;
 }
