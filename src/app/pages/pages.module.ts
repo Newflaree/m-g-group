@@ -12,6 +12,10 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AboutComponent } from './about/about.component';
+import { EnchufeOConectorComponent } from './enchufe-o-conector/enchufe-o-conector.component';
+import { PernosComponent } from './pernos/pernos.component';
+import { CablesComponent } from './cables/cables.component';
+import { PuentesOConectoresComponent } from './puentes-o-conectores/puentes-o-conectores.component';
 
 
 
@@ -22,6 +26,10 @@ import { AboutComponent } from './about/about.component';
     ProductsComponent,
     CategoriesComponent,
     AboutComponent,
+    EnchufeOConectorComponent,
+    PernosComponent,
+    CablesComponent,
+    PuentesOConectoresComponent,
   ],
   imports: [
     CommonModule,

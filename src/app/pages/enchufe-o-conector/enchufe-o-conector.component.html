@@ -1,0 +1,26 @@
+<section class='products'>
+  <div class='container animate__animated animate__fadeIn animate__faster'>
+
+    <!-- Grid Iterm-->
+    <div class='row'>
+      <div class='section-title'>
+        <h2>{{ title }}</h2>
+      </div> 
+    </div>
+    <!-- Grid Iterm-->
+
+    <div class='row'>
+      <!-- Grid Iterm-->
+      <div class='grid-item' *ngFor='let item of eocItems'>
+          <div class='grid-img'>
+            <img src='{{ item.url }}' alt='grid-img' width='331px' height="308px">
+          </div>
+          <div class='grid-info'>
+            <div class='start'></div>
+            <h3>{{ item.name }}</h3>
+          </div>
+      </div>
+      <!-- Grid Iterm-->
+    </div>
+  </div>
+</section>

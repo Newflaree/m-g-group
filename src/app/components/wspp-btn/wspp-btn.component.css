@@ -1,5 +1,5 @@
 .container {
-  z-index: 77;
+  z-index: 91;
 }
 .wspp-icon {
   position: fixed;
@@ -15,5 +15,5 @@
 }
 
 .wspp-icon i:hover {
-  text-shadow: 1px 1px 4px var( --bold-color );
+  transform: scale( 1.1 );
 }
