@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cables.component.css']
 })
 export class CablesComponent implements OnInit {
-  public title: string = 'cables'
+  public title: string = 'Cables'
 
   constructor() { }
 

@@ -7,12 +7,3 @@
   line-height: 25px;
 }
 
-.section-title h2::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 285px;
-  width: 400px;
-  height: 3px;
-  background-color: var( --bold-color );
-}

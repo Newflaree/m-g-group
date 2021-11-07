@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -26,7 +27,8 @@ import { NotPageFoundComponent } from './not-page-found/not-page-found.component
     PagesModule,
     SharedModule,
     ComponentsModule,
-    AppRouingModule
+    AppRouingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

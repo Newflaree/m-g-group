@@ -11,3 +11,11 @@
   height: 3px;
   background-color: var( --bold-color );
 }
+
+.col-45 {
+  width: 45%;
+}
+
+.col-55 {
+  width: 55%;
+}

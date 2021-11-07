@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/interfaces/product';
+
+// Services
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-enchufe-o-conector',
@@ -7,33 +12,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnchufeOConectorComponent implements OnInit {
   public title: string = 'Enchufe o conector'
+  public products: Product[] = [];
 
-  public eocItems = [
-    {
-      id: '123123',
-      url: '../../../assets/products/DIN 320 amp Hembra.png',
-      name: 'CONECTOR SB120'
-    },
-    {
-      id: '123121',
-      url: '../../../assets/products/DIN 320 amp Hembra.png',
-      name: 'CONECTOR SB350'
-    },
-    {
-      id: '123122',
-      url: '../../../assets/products/DIN 320 amp Hembra.png',
-      name: 'CONECTOR SB175'
-    },
-    {
-      id: '123131',
-      url: '../../../assets/products/DIN 320 amp Hembra.png',
-      name: 'CONECTOR PP30'
-    },
-  ]
-
-  constructor() { }
+  constructor( 
+    private router: Router,
+    private productsService: ProductsService
+  ) { 
+    this.products = productsService.enchufesOCenectores;
+    console.log( this.products );
+  }
 
   ngOnInit(): void {
   }
 
+  onProduct( product: Product ) {
+    this.router.navigate([ '/producto', product.id ])
+  }
 }

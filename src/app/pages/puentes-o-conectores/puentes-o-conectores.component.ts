@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./puentes-o-conectores.component.css']
 })
 export class PuentesOConectoresComponent implements OnInit {
-  public title: string = 'puentes o conectores'
+  public title: string = 'Puentes o conectores'
 
   constructor() { }
 

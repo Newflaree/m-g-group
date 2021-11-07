@@ -151,6 +151,10 @@ p {
   flex-wrap: wrap;
 }
 
+.col-50 {
+  width: 50%;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -173,25 +177,26 @@ section {
 }
 
 .section-title {
-  width: 100%;
-  padding: 0 15px;
-  text-align: center;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-bottom: 60px;
 }
 
 .section-title h2 {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
   position: relative;
 }
 
 .section-title h2::before {
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 285px;
-  width: 400px;
   height: 3px;
+  position: absolute;
+  top: 100%;
+  width: 220px;
+  align-items: center;
   background-color: var( --bold-color );
 }
 
@@ -228,6 +233,50 @@ section {
 /*-----------------------------------------------------------------------------------*/
 
 
+/*===============================*/
+/*            Buttons            */
+/*===============================*/
+.products {
+  padding-top: 60px; 
+  align-items: center;
+}
+
+.grid-item {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.grid-img {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.grid-item .grid-img:hover img {
+  transform: scale( 1.04 );
+}
+.grid-img img {
+  margin-left: 130px;
+  height: 308px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4 );
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.grid-info {
+  text-align: center;
+}
+
+.grid-info h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  color: var( --white-900 );
+  margin: 10px 0 0;
+}
+/*===============================*/
+/*            Buttons            */
+/*===============================*/
 
 
 /*-----------------------------------------------------------------------------------*/

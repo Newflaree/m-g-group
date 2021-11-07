@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pernos.component.css']
 })
 export class PernosComponent implements OnInit {
-  public title: string = 'pernos'
+  public title: string = 'Pernos'
 
   constructor() { }
 
