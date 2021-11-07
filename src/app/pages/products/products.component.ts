@@ -12,19 +12,19 @@ import {ProductsService} from 'src/app/services/products.service';
 })
 export class ProductsComponent implements OnInit {
   public product: any;
+  public espTech: any; 
 
   constructor( 
     private activatedRoute: ActivatedRoute,
-    private productsService: ProductsService
+    private productsService: ProductsService,
   ) {  }
 
   ngOnInit(): void {
     const { id } =  this.activatedRoute.snapshot.params;
     const product = this.productsService.findById(id);
 
-    this.product = product
-    console.log( this.product );
-
+    this.product = product;
+    this.espTech = product.espTech;
+    console.log( this.product.espTech );
   }
-
 }

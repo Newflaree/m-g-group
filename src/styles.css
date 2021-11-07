@@ -234,11 +234,12 @@ section {
 
 
 /*===============================*/
-/*            Buttons            */
+/*        Products Section       */
 /*===============================*/
 .products {
   padding-top: 60px; 
   align-items: center;
+  padding-bottom: 120px;
 }
 
 .grid-item {
@@ -275,7 +276,7 @@ section {
   margin: 10px 0 0;
 }
 /*===============================*/
-/*            Buttons            */
+/*        Products Section       */
 /*===============================*/
 
 

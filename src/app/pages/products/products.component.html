@@ -7,7 +7,7 @@
       </div> 
     </div>
 
-    <div class='row'>
+    <div class='row product-detail'>
       <div class='col-45'>
 	<img src='{{ product.url }}'>
       </div>
@@ -15,9 +15,11 @@
 	<div class='desc'>
 	  <p>{{ product.desc }}</p>
 	</div>
-	<div class='ficha-tecnida'>
-	  <h3>Ficha Técnica</h3>
-	  <p>{{ product.espTech }}</p>
+	<div class='ficha-tecnica'>
+	  <h3>Especificaciones Técnicas</h3>
+	  <p *ngFor='let item of espTech'>
+	    {{ item.line }}
+	  </p>
 	</div>
       </div>
 

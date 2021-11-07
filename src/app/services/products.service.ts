@@ -7,50 +7,139 @@ import { Product } from '../interfaces/product';
   providedIn: 'root'
 })
 export class ProductsService {
-  public enchufesOCenectores: any = [
+  public productsData: Product[] = [
     {
-      id: '121311',
+      id: '111311',
+      categ: 'eoc',
       name: 'CONECTOR SB120',
       url: '../../assets/products/DIN 320 amp Hembra.png',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
-      espTech: 'lalala'
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lelele' },
+	{ line: 'lilili' },
+	{ line: 'lololo' },
+	{ line: 'lululu' },
+	{ line: 'lalala' },
+	{ line: 'lelele' },
+	{ line: 'lilili' },
+      ],
     },
     {
-      id: '121312',
+      id: '111312',
+      categ: 'eoc',
       name: 'CONECTOR SB350',
       url: '../../assets/products/DIN 320 amp Hembra.png',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
-      espTech: 'lelele'
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
     },
     {
-      id: '121322',
+      id: '111322',
+      categ: 'eoc',
       name: 'CONECTOR SB175',
       url: '../../assets/products/DIN 320 amp Hembra.png',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
-      espTech: 'lilili'
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
     },
     {
-      id: '121323',
+      id: '111323',
+      categ: 'eoc',
       name: 'CONECTOR PP30',
       url: '../../assets/products/DIN 320 amp Hembra.png',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
-      espTech: 'lololo'
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
+    },
+    {
+      id: '222001',
+      categ: 'per',
+      name: 'Infiltrado',
+      url: '../../assets/products/DIN 320 amp Hembra.png',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
+    },
+    {
+      id: '222002',
+      categ: 'per',
+      name: 'Infiltrado',
+      url: '../../assets/products/DIN 320 amp Hembra.png',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
+    },
+    {
+      id: '333001',
+      categ: 'poc',
+      name: 'Infiltrado',
+      url: '../../assets/products/DIN 320 amp Hembra.png',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
+    },
+    {
+      id: '444001',
+      categ: 'cab',
+      name: 'Infiltra3',
+      url: '../../assets/products/DIN 320 amp Hembra.png',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quam id fringilla laoreet. Vivamus semper, justo a efficitur mollis, leo sapien sagittis ipsum, vitae laoreet erat velit at tortor. Etiam suscipit felis id magna blandit, sit amet finibus diam congue. Vivamus ac sem accumsan, rutrum tortor et, fermentum enim. ',
+      espTech: [
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+	{ line: 'lalala' },
+      ],
     },
   ];
 
   constructor() { }
 
   findById( id: string ) {
-    const filtered = this.enchufesOCenectores.filter( ( element: Product ) => {
+    const filtered = this.productsData.filter( ( element: Product ) => {
       return element.id === id
     });
 
     return {
       id: filtered[0].id,
+      categ: filtered[0].categ,
       name: filtered[0].name,
       url: filtered[0].url,
       desc: filtered[0].description,
       espTech: filtered[0].espTech
     };
+  }
+
+  getProducts( categ: string ) {
+    const products = this.productsData.filter( ( element: Product ) => {
+      return element.categ === categ;
+    })
+
+    return products;
   }
 }

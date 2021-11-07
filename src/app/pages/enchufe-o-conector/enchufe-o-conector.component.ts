@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
+// Interfaces
 import { Product } from 'src/app/interfaces/product';
 
 // Services
@@ -13,13 +15,13 @@ import { ProductsService } from 'src/app/services/products.service';
 export class EnchufeOConectorComponent implements OnInit {
   public title: string = 'Enchufe o conector'
   public products: Product[] = [];
+  private category: string = 'eoc';
 
   constructor( 
     private router: Router,
     private productsService: ProductsService
   ) { 
-    this.products = productsService.enchufesOCenectores;
-    console.log( this.products );
+    this.products = productsService.getProducts( this.category );
   }
 
   ngOnInit(): void {

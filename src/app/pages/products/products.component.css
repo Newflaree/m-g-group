@@ -1,14 +1,21 @@
-.products {
-  height: 1000px;
+.section-title-product {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
-.section-title h2::before {
+.section-title-product h2 {
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+.section-title-product h2::before {
   content: '';
+  height: 2px;
   position: absolute;
-  bottom: 0;
-  left: 470px;
-  width: 200px;
-  height: 3px;
+  top: 280px;
+  width: 190px;
   background-color: var( --bold-color );
 }
 
@@ -18,4 +25,19 @@
 
 .col-55 {
   width: 55%;
+}
+
+.product-detail img {
+  margin-left: 40px;
+}
+
+.product-detail .desc {
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.product-detail .ficha-tecnica {
+  margin: 20px;
+  margin-left: 100px;
+  margin-bottom: 40px;
 }

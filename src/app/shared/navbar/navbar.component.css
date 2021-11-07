@@ -56,7 +56,7 @@ header nav ul li:hover a {
 }
 
 header nav ul li .products-box {
-  margin-top: -2px;
+  margin-top: -3px;
   background-color: var( --back-color );
   width: 250px;
   height: 170px;
