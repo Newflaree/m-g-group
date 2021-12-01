@@ -29,16 +29,13 @@ export class SlideshowComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    console.log( this.slideService.slideImgs );
   }
 
   onPrev() {
-    console.log( 'Hello' );
     this.swiper.slidePrev();
   }
 
   onNext() {
-    console.log( 'Hello' );
     this.swiper.slideNext();
   }
 
